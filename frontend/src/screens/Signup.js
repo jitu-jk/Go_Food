@@ -4,7 +4,10 @@ import { Link, useNavigate } from "react-router-dom";
 import Navbar from '../components/Navbar';
 import ReCAPTCHA from "react-google-recaptcha";
 
- //const SITE_KEY = "6LdpmqwrAAAAAAPseX6FYyrt_cGd2PdvgDVde0Im";
+//  const SITE_KEY = "6LdpmqwrAAAAAAPseX6FYyrt_cGd2PdvgDVde0Im";
+
+const SITE_KEY = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
+
  
  
 export default function Signup() {
