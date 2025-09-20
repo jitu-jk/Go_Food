@@ -1,0 +1,26 @@
+# Ignore Go build artifacts
+/bin/
+/build/
+/dist/
+*.exe
+*.out
+*.test
+node_modules/
+
+# Ignore dependency directories
+/vendor/
+
+# Ignore IDE/editor files
+*.swp
+*.swo
+*.idea/
+.vscode/
+*.log
+
+# Ignore OS generated files
+.DS_Store
+Thumbs.db
+
+# Ignore environment files
+.env
+.env.*
