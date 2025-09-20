@@ -4,7 +4,7 @@ import Navbar from '../components/Navbar';
 import ReCAPTCHA from "react-google-recaptcha";
 
 
-const SITE_KEY = "6LdpmqwrAAAAAAPseX6FYyrt_cGd2PdvgDVde0Im";
+// const SITE_KEY = "6LdpmqwrAAAAAAPseX6FYyrt_cGd2PdvgDVde0Im";
 
 export default function Login() {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
