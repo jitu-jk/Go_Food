@@ -17,6 +17,7 @@ const jwtSecret = process.env.JWT_SECRET;
     }
 
 
+    
     const salt = await bcrypt.genSalt(10);
     let secPassword = await bcrypt.hash(req.body.password,salt)
 
