@@ -17,15 +17,15 @@ export default function Signup() {
     password: "",
     location: "",
   });
-   const [captcha, setCaptcha] = useState(null);
+  //  const [captcha, setCaptcha] = useState(null);
   let navigate = useNavigate();
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-   if (!captcha) {
-     alert("Please verify that you are not a robot.");
-     return;
-   }
+  //  if (!captcha) {
+  //    alert("Please verify that you are not a robot.");
+  //    return;
+  //  }
     const response = await fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:5000'}/api/createuser`, {
       method: "POST",
       headers: {
@@ -36,7 +36,7 @@ export default function Signup() {
         email: credentials.email,
         password: credentials.password,
         location: credentials.location,
-  captcha: captcha,
+  //captcha: captcha,
       }),
     });
     const json = await response.json();

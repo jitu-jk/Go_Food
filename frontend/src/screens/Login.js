@@ -13,16 +13,16 @@ export default function Login() {
   const [credentials, setCredentials] = useState({ email: "", password: "" });
   const navigate = useNavigate();
 
-  const [captcha, setCaptcha] = useState(null);
+  //const [captcha, setCaptcha] = useState(null);
  
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
-   if (!captcha) {
-     alert("Please verify that you are not a robot.");
-     return;
-   }
+  // if (!captcha) {
+  //    alert("Please verify that you are not a robot.");
+  //    return;
+  //  }
 
  
     const response = await fetch(`${process.env.REACT_APP_API_URL || 'http://localhost:5000'}/api/loginUser`, {
