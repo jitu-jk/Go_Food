@@ -2,11 +2,11 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import Navbar from '../components/Navbar';
-import ReCAPTCHA from "react-google-recaptcha";
+//import ReCAPTCHA from "react-google-recaptcha";
 
 //  const SITE_KEY = "6LdpmqwrAAAAAAPseX6FYyrt_cGd2PdvgDVde0Im";
 
-const SITE_KEY = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
+//const SITE_KEY = process.env.REACT_APP_RECAPTCHA_SITE_KEY;
 
  
  
@@ -108,10 +108,10 @@ export default function Signup() {
             />
           </div>
           <div className="mb-3">
-            <ReCAPTCHA
+            {/* <ReCAPTCHA
               sitekey={SITE_KEY}
               onChange={setCaptcha}
-            />
+            /> */}
           </div>
           <button type="submit" className="m-3 btn btn-primary">Submit</button>
           <Link to="/login" className="m-3 btn btn-danger">Already a user</Link>
